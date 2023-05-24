@@ -1,0 +1,102 @@
+<nz-content>
+  <nz-header class="d-flex flex-column justify-content-center headerTitle">
+    <p class="title">Menu 1</p>
+    <p class="subTitle">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </nz-header>
+
+  <nz-header class="d-flex flex-column justify-content-center headerSubTitle">
+    <p class="title">Titulo</p>
+    <p class="subTitle">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </nz-header>
+
+  <section class="searchCode d-flex flex-column">
+    <div class="container2">
+      <p class="sTitle">Busca de código</p>
+      <p class="subTitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et <a href="#">Clique aqui</a> para
+        adicionar novo código
+      </p>
+
+      <div class="divider"></div>
+
+      <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+        <input type="text" nz-input placeholder="Digite o código" />
+      </nz-input-group>
+      <ng-template #suffixIconButton>
+        <button nz-button nzType="primary" nzSearch>
+          <span nz-icon nzType="search"></span>
+        </button>
+      </ng-template>
+    </div>
+  </section>
+
+  <section class="searchCode d-flex flex-column">
+    <div class="container2 d-flex flex-column">
+      <p class="sTitle">Lista de código</p>
+      <p class="subTitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <div class="divider"></div>
+
+      <input-form [placeholder]="'Busca'" class="align-self-end"></input-form>
+      <nz-table
+        #rowSelectionTable
+        [nzPageSize]="2"
+        [nzData]="listOfData"
+        (nzCurrentPageDataChange)="onCurrentPageDataChange($event)"
+      >
+        <thead>
+          <tr>
+            <th
+              [nzSelections]="listOfSelection"
+              [(nzChecked)]="checked"
+              [nzIndeterminate]="indeterminate"
+              (nzCheckedChange)="onAllChecked($event)"
+            ></th>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Alicota Fixa</th>
+            <th>Fator Gerador</th>
+            <th>Pediodo de apuração</th>
+            <th>Vencimento</th>
+            <th>Açoes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of rowSelectionTable.data">
+            <td
+              [nzChecked]="setOfCheckedId.has(data.id)"
+              (nzCheckedChange)="onItemChecked(data.id, $event)"
+            ></td>
+            <td>{{ data.code }}</td>
+            <td>{{ data.name }}</td>
+            <td>{{ data.aFixed }}</td>
+            <td>{{ data.generatorAct }}</td>
+            <td>{{ data.apuration }}</td>
+            <td>{{ data.vencimento }}</td>
+            <td>
+              <button class="btn actionsBtn">
+                <span nz-icon nzType="setting" nzTheme="outline"></span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </nz-table>
+
+      <div class="divider"></div>
+
+      <button class="btn btn-primary d-flex align-items-center justify-content-center align-self-end">
+        <span nz-icon nzType="plus" nzTheme="outline"></span> Cadastrar Novo
+      </button>
+    </div>
+  </section>
+</nz-content>

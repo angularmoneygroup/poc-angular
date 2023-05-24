@@ -1,0 +1,93 @@
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 3.938rem;
+  gap: 5%;
+  background: var(--background-secondary);
+}
+
+nz-header {
+  background: var(--background-secondary);
+  display: flex;
+  flex-direction: row;
+  color: var(--white);
+  padding: 0;
+
+  img {
+    width: 18px;
+    margin-right: 0.7rem;
+  }
+
+  p {
+    font-size: 18px;
+    color: var(--text-light) !important;
+  }
+}
+
+nz-content {
+  margin: 0 16px;
+}
+
+nz-breadcrumb {
+  margin: 16px 0;
+}
+
+.inner-content {
+  padding: 24px;
+  background: #fff;
+  min-height: 360px;
+}
+
+nz-footer {
+  text-align: center;
+}
+
+.iconUser {
+  color: var(--text-light);
+  font-size: 2.5rem;
+}
+
+.iconSidebar {
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.menu1 {
+  gap: 10px;
+}
+
+p {
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+::ng-deep {
+  .ant-layout-sider-children,
+  .ant-menu,
+  .ant-menu-root,
+  .ant-menu-dark,
+  .antF-menu-inline {
+    background-color: var(--background-sidebar) !important;
+  }
+}
+
+.divider {
+  height: 0px;
+  width: 100%;
+  border-radius: 0px;
+  border: 1px solid #1A1A1A;
+}
+
+.layoutContainer{
+  height: 95vh;
+}

@@ -1,0 +1,33 @@
+.header {
+  min-height: 3.25rem;
+  padding: 0 0.625rem;
+  background: linear-gradient(90deg, #144b59 0%, #0b687f 51%, #197d93 100%);
+
+  .envPRD{
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+.divider {
+  height: 24px;
+  width: 0px;
+border-radius: 0px;
+border: 1px solid #FFFFFF;
+
+}
+.endHeader{
+  white-space: nowrap;
+  gap: 5%;
+  width: 9%;
+}
+
+.toggle2{
+  color: var(--white);
+  width: 20%;
+  gap: 30%;
+}
+
+span{
+  cursor: pointer;
+}

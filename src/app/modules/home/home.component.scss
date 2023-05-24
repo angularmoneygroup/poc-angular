@@ -1,0 +1,23 @@
+nz-header {
+  background: var(--white);
+  color: var(--text-secondary);
+  line-height: 1.5rem;
+}
+
+.title{
+  font-size: 1.2rem;
+}
+
+.subTitle{
+  font-size: 12px;
+}
+
+.logoImage{
+  width: 100%;
+  min-height: 81vh;
+}
+
+nz-content {
+  background-color: var(--background-home);
+  min-height: 88vh;
+}

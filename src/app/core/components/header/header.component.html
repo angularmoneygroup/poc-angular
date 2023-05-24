@@ -1,0 +1,27 @@
+<header
+  class="header d-flex flex-row justify-content-between align-items-center"
+>
+  <img src="../../../../assets/svgs/logo-empresa.svg" alt="Logo empresa" />
+  <section class="d-flex flex-row align-items-center endHeader">
+    <p class="envPRD">Ambiente de Produção</p>
+    <div
+      class="d-flex flex-row align-items-center toggle2"
+      *ngIf="rota.url !== '/'"
+    >
+      <div class="divider"></div>
+      <div class="dropdown">
+        <span
+        nz-icon
+        nzType="unordered-list"
+        nzTheme="outline"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      ></span>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Ir para o Menu</a></li>
+          <li><a class="dropdown-item" href="#">Ir para o conteudo</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</header>

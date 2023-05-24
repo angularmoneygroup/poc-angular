@@ -1,0 +1,103 @@
+.headerTitle {
+  background: var(--white);
+}
+
+.headerSubTitle {
+  background-color: var(--background-primary);
+}
+
+.headerTitle,
+.headerSubTitle {
+  color: var(--text-secondary);
+  line-height: 1.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.subTitle {
+  font-size: 12px;
+  padding-bottom: 9px;
+}
+
+.logoImage {
+  width: 100%;
+  min-height: 81vh;
+}
+
+nz-content {
+  background-color: var(--background-primary);
+  min-height: 88vh;
+}
+
+.searchCode {
+  color: var(--text-secondary);
+  height: 100%;
+  width: 95%;
+  background-color: var(--white);
+  margin: 30px;
+  gap: 5%;
+
+  a {
+    color: var(--activeLink);
+  }
+}
+
+.divider {
+  height: 0px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  margin-bottom: 10px;
+}
+
+.container2 {
+  margin: 1%;
+}
+
+.sTitle {
+  font-size: 14px;
+  padding-bottom: 9px;
+}
+
+nz-input-group {
+  width: 40%;
+}
+
+.actionsBtn {
+  background: #cccccc;
+  color: #70737b;
+  display: flex;
+  height: 34.5px;
+  width: 42px;
+  align-items: center;
+}
+
+::ng-deep {
+  .ant-table-cell {
+    border: 1px solid #cccccc;
+  }
+
+  .ant-pagination-item-active,
+  .ant-pagination-disabled .ant-pagination-item-link,
+  .ant-pagination-disabled:hover .ant-pagination-item-link,
+  .ant-pagination-item,
+  .ant-pagination-item-link,  .ant-pagination-item:hover {
+    background: #cccccc !important;
+    border-color: #cccccc !important;
+
+    a {
+      color: #70737b;
+    }
+  }
+}
+
+input-form{
+  margin-bottom: 20px;
+}
+
+.btn.btn-primary{
+  gap: 5%;
+  white-space: nowrap;
+background: #077391
+}

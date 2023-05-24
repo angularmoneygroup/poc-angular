@@ -1,0 +1,43 @@
+<section class="d-flex authContainer">
+  <img
+    src="../../../assets/images/logoauth.png"
+    width="50%"
+    style="max-height: 100vh"
+    alt="Logo Sistema"
+  />
+
+  <section class="d-flex justify-content-center align-items-center w-100">
+    <div class="formAuth d-flex flex-column align-items-center">
+      <h1 class="formTitle">Entrar no sistema</h1>
+      <div style="height: 0px; width: 383.5px; border: 1px solid #cccccc"></div>
+      <p class="lorenIpus">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore
+      </p>
+
+      <div class="formData d-flex flex-column" >
+        <input-form
+          [type]="'text'"
+          [label]="'Usuário'"
+          [name]="'user'"
+          [id]="'user'"
+          [placeholder]="'Usuário ou CPF'"
+        ></input-form>
+        <input-form
+          [type]="'text'"
+          [label]="'Senha'"
+          [name]="'pass'"
+          [id]="'pass'"
+          [placeholder]="'Senha'"
+        ></input-form>
+
+        <a class="link">Esqueceu sua senha?</a>
+
+        <button type="submit" class="btn btn-primary d-flex flex-row justify-content-center align-items-center" (click)='goToHome()'>
+          <span nz-icon nzType="arrow-right" nzTheme="outline"></span>
+          <span style="padding-left: 10px;">Entrar</span>
+        </button>
+      </div>
+    </div>
+  </section>
+</section>
