@@ -1,6 +1,6 @@
 <section class="d-flex authContainer">
   <img
-    src="../../../assets/images/logoauth.png"
+    src="../../../assets/svgs/logoLogin.svg"
     width="50%"
     style="max-height: 100vh"
     alt="Logo Sistema"
@@ -15,7 +15,7 @@
         tempor incididunt ut labore
       </p>
 
-      <div class="formData d-flex flex-column" >
+      <div class="formData d-flex flex-column">
         <input-form
           [type]="'text'"
           [label]="'Usuário'"
@@ -33,7 +33,17 @@
 
         <a class="link">Esqueceu sua senha?</a>
 
-        <button type="submit" class="btn btn-primary d-flex flex-row justify-content-center align-items-center" (click)='goToHome()'>
+        <button
+          type="submit"
+          class="
+            btn btn-primary
+            d-flex
+            flex-row
+            justify-content-center
+            align-items-center
+          "
+          (click)="goToHome()"
+        >
           <span nz-icon nzType="arrow-right" nzTheme="outline"></span>
           <span style="padding-left: 10px;">Entrar</span>
         </button>
