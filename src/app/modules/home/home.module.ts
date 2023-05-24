@@ -4,15 +4,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
-import { NgZorroAntdModule } from 'src/app/shared/library/ng-zorro-antd/ng-zorro-antd.module';
+import { NgZorroAntdModule } from '../../shared/library/ng-zorro-antd/ng-zorro-antd.module';
 import { HomeComponent } from './home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
-  }
-]
+    component: HomeComponent,
+  },
+];
 
 @NgModule({
   imports: [
@@ -24,6 +24,6 @@ const routes: Routes = [
     ReactiveFormsModule,
     NgZorroAntdModule,
   ],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent],
 })
-export class HomeModule { }
+export class HomeModule {}
